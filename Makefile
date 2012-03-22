@@ -4,9 +4,13 @@ SHELL=bash
 help:
 	@echo "Three commands:"
 	@echo "   make generate_data # using the commands in parameters.txt to create folders with synthetic networks in them"
+	@echo "   make run_sbm       # for each folder that is specified in parameters.txt, run the SBM for 10,000 iterations."
 
 generate_data:
 	set -e; cat parameters.txt | egrep '^[^#]' | while read dir K O E rest; do mkdir -p $$dir; pushd $$dir; python ../synth_blocks.py $$K $$O $$E; popd; done
+
+run_sbm:
+	set -e; cat parameters.txt | egrep '^[^#]' | while read dir rest; do echo $$dir; test -f $$dir/GT.vector; test -f $$dir/edge_list.txt; done
 
 sbm=/home/aaronmcdaid/Code/MyCode/SBM/sbm
 ULIMIT=ulimit -v 4000000 -t 18000
