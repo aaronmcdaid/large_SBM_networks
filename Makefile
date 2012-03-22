@@ -14,6 +14,7 @@ run_sbm:
 
 sbm=/home/aaronmcdaid/Code/MyCode/SBM/sbm
 ULIMIT=ulimit -v 4000000 -t 18000
+time.txt=nice -n20 time -p -o time.txt --
 
 %/_sbm: args=$(shell echo "$*" | tr / '\n' | tail -n1 | tr _ ' ' | sed -re 's/--GT/--GT ..\/..\/GT.vector/' )
 %/_sbm: directory=$*
