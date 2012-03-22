@@ -1,0 +1,23 @@
+#
+# Lines beginning with '#' are ignored.
+# This fields are:
+#    1) folder name to be created
+#    2) number of clusters
+#    3) number of nodes in *each* cluster
+#    4) desired number of edges
+# Two files will be created in the folder
+#    edge_list.txt : the edge list of a directed SBM network as defined by the parameters.
+#    GT.vector : a line for each node, recording which cluster it is in.
+
+K3O3333E10m	3	3333	10000000
+K4O2500E10m	4	2500	10000000
+K5O2000E10m	5	2000	10000000
+K6O1667E10m	6	1667	10000000
+K7O1429E10m	7	1429	10000000
+K8O1250E10m	8	1250	10000000
+K9O1111E10m	9	1111	10000000
+K10O1000E10m	10	1000	10000000
+#K20O500E10m	3	3333	10000000
+#K30O333E10m	3	3333	10000000
+#K40O250E10m	3	3333	10000000
+#K50O200E10m	3	3333	10000000
