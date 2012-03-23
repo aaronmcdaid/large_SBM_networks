@@ -1,4 +1,6 @@
-This is part of my SBM project. See https://sites.google.com/site/aaronmcdaid/sbm
+This is part of a project on a more scalable algorithm for the Stochastic Block Model.
+See https://sites.google.com/site/aaronmcdaid/sbm and our arXiv document (details below).
+Our paper is under review at a journal at the moment.
 
 The data files used in our paper [2] in section 6.3 ("Larger networks") are very large.  So I have created this Makefile to generate the data locally, and optionally to run our SBM code on it. The source code for our algorithm is also online [1].
 
