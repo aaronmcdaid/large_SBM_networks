@@ -1,0 +1,36 @@
+This is part of my SBM project. See https://sites.google.com/site/aaronmcdaid/sbm
+
+The data files used in our paper [2] in section 6.3 ("Larger networks") are very large.
+So I have created this Makefile to generate the data locally, and optionally to run our SBM code
+on it. The source code for our algorithm is also online [1].
+
+
+	@echo "Three commands, to be run in order:"
+	@echo "   make generate_data # using the commands in parameters.txt to create folders with synthetic networks in them"
+	@echo "   make run_sbm       # for each folder that is specified in parameters.txt, run the SBM for 10,000 iterations."
+	@echo "   make make_table    # print the runtime and number of iterations until the correct result is reached."
+
+
+Footnotes/References:
+
+[1] https://sites.google.com/site/aaronmcdaid/sbm
+[2] "Clustering in networks with the collapsed Stochastic Block Model"
+
+http://arxiv.org/abs/1203.3083
+
+@article{McDaidSBM,
+    journal = "Arxiv preprint arXiv:1203.3083",
+    archivePrefix = {arXiv},
+    author = {McDaid, Aaron F. and Murphy, Brendan and Friel, Nial and Hurley, Neil},
+    citeulike-article-id = {10457983},
+    citeulike-linkout-0 = {http://arxiv.org/abs/1203.3083},
+    citeulike-linkout-1 = {http://arxiv.org/pdf/1203.3083},
+    day = {14},
+    eprint = {1203.3083},
+    month = mar,
+    posted-at = {2012-03-15 10:10:36},
+    priority = {2},
+    title = {Clustering in networks with the collapsed Stochastic Block Model},
+    url = {http://arxiv.org/abs/1203.3083},
+    year = {2012}
+}
